@@ -1,6 +1,6 @@
 def ret_data(city):
 
-    import requests, json
+    import requests
     base_url = "http://api.openweathermap.org/data/2.5/weather?"
     api_key = "8eec4a33213199cae5d7a83f10410a0c"
 
@@ -28,7 +28,7 @@ def ret_data(city):
         z = x["weather"]
         descrip = z[0]["description"]
         
-        data = ("current Temp in C° = " +
+        data = ("place:" + city +"\ncurrent Temp in C° = " +
               str(temp-273.15) +
               "\n\n pressure in hPa = " + 
               str(press) + 
