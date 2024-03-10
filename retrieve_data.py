@@ -15,7 +15,7 @@ def ret_data(city):
         x = response.json()
 
     if x["cod"] == "404":
-       data = 'Sorry,'+ city + 'not found\n Try things like bracets or similar'
+       data = 'Sorry,'+ city + ' not found\n Try things like bracets or similar'
        return data
        pass
 
